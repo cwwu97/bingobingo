@@ -1,7 +1,6 @@
 import sqlite3
 
 def get_con():
-
     return sqlite3.connect('db/bingo.db')
 
 def dict_factory(cursor, row):
