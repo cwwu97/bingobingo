@@ -39,10 +39,16 @@ def bingoAnalysis():
     '''
     --- 取得前端變數 ---
     '''
-    years = request.args.getlist('year') # 回傳一個list，包含使用者所選年份
-    months = request.args.getlist('month') # 回傳一個list，包含使用者所選月份
-    days = request.args.getlist('day') # 回傳一個list，包含使用者所選日期
-    weekdays = request.args.getlist('weekday') # 回傳一個list，包含使用者所選星期
+    req_json = request.get_json(force=True)
+    years = req_json['year'] # 回傳一個list，包含使用者所選年份
+    months = req_json['month'] # 回傳一個list，包含使用者所選月份
+    days = req_json['day'] # 回傳一個list，包含使用者所選日期
+
+
+    # years = request.args.getlist('year') # 回傳一個list，包含使用者所選年份
+    # months = request.args.getlist('month') # 回傳一個list，包含使用者所選月份
+    # days = request.args.getlist('day') # 回傳一個list，包含使用者所選日期
+    # weekdays = request.args.getlist('weekday') # 回傳一個list，包含使用者所選星期
 
     # years = [2020, 2021,2022] # 回傳一個list，包含使用者所選年份
     # months = [1,2,3,4,5,6] # 回傳一個list，包含使用者所選月份
