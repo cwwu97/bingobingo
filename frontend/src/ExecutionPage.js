@@ -16,15 +16,17 @@ import './style.css';
 
 function ExecutionPage() {
     const [currentPage, setCurrentPage] = useState("main");
+    const [showChart, setShowChart] = useState(false);
+    const [charts, setCharts] = useState();
     const query = useQuery("bingo", getTodayNumber);
     if (query.data === undefined) {
         return <div>Loading data...</div>;
     }
 
     const handleAnalysis = async (arg) => {
-        console.log(arg);
         const chartData = await getAnalysis(arg);
-        console.log(chartData);
+        setCharts(chartData[0]);
+        setShowChart(true);
     }
     
     return (
@@ -33,7 +35,7 @@ function ExecutionPage() {
             <Container>
                 {currentPage === "main" && <BingoTable data={query.data} /> }
                 {currentPage === "analysis" && <CheckboxInput handleAnalysis={handleAnalysis} />}
-                {currentPage === "analysis" && <Chart />}
+                {currentPage === "analysis" && showChart === true && <Chart chartData={charts} />}
             </Container>
         </div>
     );

@@ -10,9 +10,9 @@ const month = [1,2,3,4,5,6,7,8,9,10,11,12];
 const day = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
 
 export default function CheckboxInput({handleAnalysis}) {
-    const [checked, setChecked] = useState([false, false, false]);
-    const [checkMonth, setCheckMonth] = useState(JSON.parse(JSON.stringify(month)).fill(false));
-    const [checkDay, setCheckDay] = useState(JSON.parse(JSON.stringify(day)).fill(false));
+    const [checked, setChecked] = useState([true, true, true]);
+    const [checkMonth, setCheckMonth] = useState(JSON.parse(JSON.stringify(month)).fill(true));
+    const [checkDay, setCheckDay] = useState(JSON.parse(JSON.stringify(day)).fill(true));
 
     const analysis = () => {
         let tmpY = [];
@@ -29,6 +29,15 @@ export default function CheckboxInput({handleAnalysis}) {
         for (let i = 0;i < checkDay.length;i++) {
             if (checkDay[i])
                 tmpD.push(day[i]) 
+        }
+        if (tmpY.length === 0) {
+            tmpY = [2020,2021,2022];
+        }
+        if (tmpM.length === 0) {
+            tmpM = [1,2,3,4,5,6,7,8,9,10,11,12];
+        }
+        if (tmpD.length === 0) {
+            tmpD = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
         }
         handleAnalysis({"year":tmpY, "month":tmpM, "day":tmpD});
     }

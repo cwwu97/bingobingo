@@ -53,7 +53,7 @@ def bingoAnalysis():
     years = eval(request.args.get('arg'))['year'] # 回傳一個list，包含使用者所選年份
     months = eval(request.args.get('arg'))['month'] # 回傳一個list，包含使用者所選月份
     days = eval(request.args.get('arg'))['day'] # 回傳一個list，包含使用者所選日期
-    weekdays = eval(request.args.get('arg'))['weekday'] # 回傳一個list，包含使用者所選星期
+    # weekdays = eval(request.args.get('arg'))['weekday'] # 回傳一個list，包含使用者所選星期
 
     # years = [2020, 2021,2022] # 回傳一個list，包含使用者所選年份
     # months = [1,2,3,4,5,6] # 回傳一個list，包含使用者所選月份
@@ -120,4 +120,3 @@ def bingoRedirect():
     return redirect('https://www.taiwanlottery.com.tw/index_new.aspx')
 
 app.run(debug = True)
-
