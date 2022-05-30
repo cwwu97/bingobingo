@@ -21,15 +21,15 @@
 
 1. Install package
    ```
-   npm install create-react-app
+   $ npm install create-react-app
    ```
 2. Install react package(only for the first time)
    ```
-   cd frontend
-   yarn install
+   $ cd frontend
+   $ yarn install
    ```
-3. Getting started
+3. Getting started(both in the root directory and ./frontend are fine)
    ```
-   yarn start
+   $ yarn start
    ```
 
