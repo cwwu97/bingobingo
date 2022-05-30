@@ -53,7 +53,7 @@ def bingoAnalysis():
     years = eval(request.args.get('arg'))['year'] # 回傳一個list，包含使用者所選年份
     months = eval(request.args.get('arg'))['month'] # 回傳一個list，包含使用者所選月份
     days = eval(request.args.get('arg'))['day'] # 回傳一個list，包含使用者所選日期
-    weekdays = eval(request.args.get('arg'))['weekday'] # 回傳一個list，包含使用者所選星期
+    # weekdays = eval(request.args.get('arg'))['weekday'] # 回傳一個list，包含使用者所選星期
 
     # years = [2020, 2021,2022] # 回傳一個list，包含使用者所選年份
     # months = [1,2,3,4,5,6] # 回傳一個list，包含使用者所選月份
@@ -77,6 +77,8 @@ def bingoAnalysis():
                     else:
                         if day <= 28:
                             dates.append('{}-{}-{}'.format(year, str(month).zfill(2), str(day).zfill(2)))
+    if len(dates) == 1:
+        dates.append(0)
 
     '''
     --- DAO ---
@@ -88,7 +90,7 @@ def bingoAnalysis():
     SELECT id,date,time,num01,num02,num03,num04,num05,num06,num07,num08,num09,num10,num11,num12,num13,num14,num15,num16,num17,num18,num19,num20,odd_even
     FROM bingo
     WHERE date IN {};
-    '''.format(tuple(dates)) )
+    '''.format(tuple(dates)))
     results = cur.fetchall()
     con.commit()
     cur.close()
