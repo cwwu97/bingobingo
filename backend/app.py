@@ -3,8 +3,10 @@ from flask import Flask, jsonify, request, redirect
 from db.db import get_con, dict_factory
 import datetime
 import collections
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/')
 def index():
@@ -39,6 +41,7 @@ def bingoAnalysis():
     '''
     --- 取得前端變數 ---
     '''
+    print(request.args)
     req_json = request.get_json(force=True)
     years = req_json['year'] # 回傳一個list，包含使用者所選年份
     months = req_json['month'] # 回傳一個list，包含使用者所選月份
