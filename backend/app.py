@@ -77,6 +77,8 @@ def bingoAnalysis():
                     else:
                         if day <= 28:
                             dates.append('{}-{}-{}'.format(year, str(month).zfill(2), str(day).zfill(2)))
+    if len(dates) == 1:
+        dates.append(0)
 
     '''
     --- DAO ---
@@ -88,7 +90,7 @@ def bingoAnalysis():
     SELECT id,date,time,num01,num02,num03,num04,num05,num06,num07,num08,num09,num10,num11,num12,num13,num14,num15,num16,num17,num18,num19,num20,odd_even
     FROM bingo
     WHERE date IN {};
-    '''.format(tuple(dates)) )
+    '''.format(tuple(dates)))
     results = cur.fetchall()
     con.commit()
     cur.close()
