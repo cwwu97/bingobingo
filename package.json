@@ -4,7 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "cd frontend && yarn start",
-    "server": "cd backend && flask run"
+    "start": "cd frontend && yarn start"
   }
 }

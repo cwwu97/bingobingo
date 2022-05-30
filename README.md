@@ -16,3 +16,20 @@
    ```
    $ flask run
    ```
+
+## Frontend
+
+1. Install package
+   ```
+   npm install create-react-app
+   ```
+2. Install react package(only for the first time)
+   ```
+   cd frontend
+   yarn install
+   ```
+3. Getting started
+   ```
+   yarn start
+   ```
+
