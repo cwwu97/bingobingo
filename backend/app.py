@@ -8,6 +8,17 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
+CORS(app)
+
+@app.after_request
+def after_request(response):
+    header = response.headers
+    header['Access-Control-Allow-Origin'] = '*'
+    header['Access-Control-Allow-Headers'] = '*'
+    header['Access-Control-Allow-Methods'] = '*'
+    header['Content-type'] = 'application/json'
+    return response
+
 @app.route('/')
 def index():
     return 'This is a BingoBingo project.'
@@ -46,12 +57,7 @@ def bingoAnalysis():
     years = req_json['year'] # 回傳一個list，包含使用者所選年份
     months = req_json['month'] # 回傳一個list，包含使用者所選月份
     days = req_json['day'] # 回傳一個list，包含使用者所選日期
-
-
-    # years = request.args.getlist('year') # 回傳一個list，包含使用者所選年份
-    # months = request.args.getlist('month') # 回傳一個list，包含使用者所選月份
-    # days = request.args.getlist('day') # 回傳一個list，包含使用者所選日期
-    # weekdays = request.args.getlist('weekday') # 回傳一個list，包含使用者所選星期
+    weekdays = req_json['weekdays'] # 回傳一個list，包含使用者所選星期
 
     # years = [2020, 2021,2022] # 回傳一個list，包含使用者所選年份
     # months = [1,2,3,4,5,6] # 回傳一個list，包含使用者所選月份
