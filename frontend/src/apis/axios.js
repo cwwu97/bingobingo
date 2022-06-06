@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const instance = axios.create({ baseURL: 'http://localhost:5000' })
-const path = "http://localhost:5000"
+const instance = axios.create({ baseURL: 'http://35.229.182.187:5000' })
+const path = "http://35.229.182.187:5000"
 
 const getTodayNumber = async () => {
     try { 
