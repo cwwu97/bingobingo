@@ -8,7 +8,7 @@ export default function Chart(chartData) {
     numberData.push({"name":i.toString(), "freq": chartData['chartData']['num_freq'][i.toString()]});
   }
 
-  const oddEvenTag = ['和','單','小','雙'];
+  const oddEvenTag = ['和','單','小單','雙', '小雙', '無開獎'];
   var oddEvenData = []
   for (let i = 0;i < oddEvenTag.length;i++) {
     oddEvenData.push({"name":oddEvenTag[i], "freq": chartData['chartData']['oddeven_freq'][oddEvenTag[i]]});

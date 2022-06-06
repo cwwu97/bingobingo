@@ -1,0 +1,20 @@
+services:
+
+  db:
+    mongo:
+      
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    image:
+      server-image
+
+  # client:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.client
+  #   image:
+  #     bingo-client-image
+  #   ports:
+  #     - "3000:80"
