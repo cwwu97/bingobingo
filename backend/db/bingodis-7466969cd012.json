@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bingodis",
+  "private_key_id": "7466969cd0124bbfb990c00f2155364e137bf0fc",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDkPNBd/izVe+sU\nlbpL732ae+hvypFl1Zz3nA8o+cqdRi5PSw2CZYoqFW+bjYjQIGQBtea9wxg86SZK\nP+xjf7AZhAB3Cdnq485skataoVgIhhDwU5kEtAEhVa4E8srIlXQ1159FzNUemCmi\nPbFGEcjJSGTCrnnef6XBQ9YvgE1RE8yDCZeVigMbunRdDWQNaZiBYoJ5Rw8m0mdp\nkTNXlTPjcLOioViV1tXHwD7Jct49dXtlFlgqd3pspqyJ4xedcusFog8eCwvelAXt\nX1R/OtqhUNQCFxix0vioQM97HEvb/hVgZX/dI7dRHtcW5KG6vWr8dBSR4z8WosJj\nTKBjPF0LAgMBAAECggEAPXSMjIqIqvEjctcAIzs4wFSV2Sgbr2ZtzhRU1q0v29pO\nVOZ6HD7YDY3ZD/LzwErAct92Ymk6SQhkWYDN11rF4ZD0CRl7dm5hokU09QHVsPHc\ndMGlxajsVvv5j/aKGKl5cZf+GG7XgdXp+/gNmDbosB4Ql4UgZoNLb/cioIa1Ctu+\nF7m74YpjCN77P2jvvWbWgfTrGRRltFWXXEMJSpr4KHlKvV/JYgRHp0sZQ/8/gqxS\nvP5v3zbA43yxD8Xg5KeEGo0+/HXzayaT5mTV51xpp680SYMCUqhMvOoVFEx+Uway\ntYIM3p4Ne0eGBc4W2GAcfDzBpwMb2cYVU8wrb+TQHQKBgQD9YVw5bgmlnJleIb49\nrnlsgy0oq+luCEHhpW/ZOGjr1yRGzPcnZ/twRPb/DJqFxSCR1w26QJcEqsqQWm7u\ntZPiLVzDdpfxv7vrw26o5s9lsYoiXH0GjVULm2IfNRxqt0XLJ30VblSqbe/TxARb\nZuQcuzc4pFI8i0rm7dPokbw8vwKBgQDmmOgTmv77ebfFSJLCF7qTmxqil3yA8HEt\nU1ib4WmQHsnhMaHiD2PC07BPdGsG61xxW9JrkH1EGmcjcH9QODaH0UQTjVK9BttO\nuxZ22/BGy5jwWc4Yh9ArG9CYUQ9memfo588s1UnLL+WyZBZPw9KesvShNN18enjs\nvu+JBlMWtQKBgQCoKj3zP7zXVZ/UgcCpX2rnQghuveonRQO0pwAcwvufyyIge1ht\npu2SDbOAgvTrY3HCWWCbBNM2HcRjGiIV/B0yN7khYUxm/kHSr9p57vYnIDX1qDyy\nZIrVMUNmQvGhQhHoS0URPDClDGHnwmjB4P/0saxsw2JxHGGR8rZ53H96MQKBgF1i\nFrm5zwCv7gfqt+P6EAiuiz7E8hqVRIACfKPDySggD8kufEw7xz6i04eZsa3/qlQN\nx0zgGpp1xsbHTAeEfDDMQjFYzeTW3gEoKpS/xLImySyscZXlihurC/JjAUWS1Hmx\nRmj1hwjNwMtZVN/AgY7bEc4mxnsebdISEJcBBKzxAoGAWp1QPz/aWa7isSlaYRlG\nS4zXFWzxnOlDOEU0RRKhHM3RzEmrRLc4m0N2HxZYfkWAAY/3nKMyfoYfbSlgtaxl\nlkCz4GJTgbJULHXBKexy58t+iwuK+gFeFgPqrHYnLDJgSPYtt+DHTn+/n8CxyAFf\nkoMn3CHmcL/Y9PFKsx/tBKk=\n-----END PRIVATE KEY-----\n",
+  "client_email": "disbingo-serviceaccount@bingodis.iam.gserviceaccount.com",
+  "client_id": "108755284306613566469",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/disbingo-serviceaccount%40bingodis.iam.gserviceaccount.com"
+}
